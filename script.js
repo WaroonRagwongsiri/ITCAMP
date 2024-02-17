@@ -2,6 +2,8 @@ let songBtn = document.getElementById("songBtn");
 let gameBtn = document.getElementById("gameBtn");
 let contactBtn = document.getElementById("contactBtn");
 
+let reset = document.getElementById("reset");
+
 let song = 0;
 let game = 0;
 let contact = 0;
@@ -34,4 +36,23 @@ contactBtn.addEventListener("click", () => {
         document.getElementById("contact").innerHTML = "@naekniar";
         contact++;
     }
+});
+
+reset.addEventListener("click", () => {
+    let boxes = document.querySelectorAll(".box");
+
+    boxes.forEach(box => {
+        let imgElement = box.querySelector("img");
+        if (imgElement) {
+            box.removeChild(imgElement);
+        }
+    });
+
+    document.getElementById("favSong").innerHTML = "myFavSong";
+    document.getElementById("favGame").innerHTML = "myFavGame";
+    document.getElementById("contact").innerHTML = "myContact";
+
+    song = 0;
+    game = 0;
+    contact = 0;
 });
