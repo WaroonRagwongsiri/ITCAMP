@@ -1,0 +1,48 @@
+body {
+    background-image: url(BG.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.head{
+    background-color: rgba(54, 57, 145, 0.881);
+    color: white;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    margin: 10vh;
+}
+
+.box{
+    display: block;
+    width: 300px;
+    height: 400px;
+    background-color: rgba(38, 35, 92, 0.655);
+    color: white;
+    border-radius: 2rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.container :hover{
+    transform: scale(1.1);
+}
+
+.box img{
+    width: 250px;
+    height: 250px;
+}
+
+.button-container{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 10vh;
+    margin-right: 10vh;
+    border-radius: 2rem;
+}
+
+.button-container button{
+    width: 300px;
+}
